@@ -1,2 +1,3 @@
-# markdown_notes
+# Markdown usage
+
 Notes on markdown syntax, usage
