@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<!-- prettier-ignore -->
+<html>
+  <head>
+    $if(title)$
+      <title>$title$</title>
+    $endif$
+  </head>
+  <body>
+    $body$ 
+
+    $if(number)$
+      <p>This value $number$ gets populated dynamically.</p>
+    $endif$
+  </body>
+</html>

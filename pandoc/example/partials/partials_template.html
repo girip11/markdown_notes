@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<!-- prettier-ignore -->
+<html>
+  <head>
+    $if(title)$
+      <title>$title$</title>
+    $endif$
+  </head>
+  <body>
+    <!-- nav can be skipped by setting nav: false in yaml metadata -->
+    $if(nav)$
+      <!-- we can either invoke as nav() or nav.html() -->
+      $nav.html()$
+    $endif$
+    <section>$body$</section>
+  </body>
+</html>
