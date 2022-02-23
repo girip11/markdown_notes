@@ -5,10 +5,30 @@
     }
   ],
   "settings": {
-    "terminal.integrated.rendererType": "dom",
+    "editor.renderWhitespace": "all",
+
+    "[markdown]": {
+      "editor.codeActionsOnSave": {
+        "source.fixAll.markdownlint": true
+      },
+      "editor.wordWrap": "wordWrapColumn",
+      "editor.wrappingIndent": "none"
+    },
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrapColumn": 80,
+    "editor.detectIndentation": false,
+    "editor.fontSize": 16,
+    "terminal.integrated.env.linux": {
+      "VSCODE_INTEGRATED_TERMINAL": "true"
+    },
     "git.autorefresh": true,
-    "files.insertFinalNewline": true,
     "markdownlint.ignore": ["**/*.md.html"],
+    "markdownlint.config": {
+      "html": false
+    },
+    "files.insertFinalNewline": true,
     "files.associations": {
       "*.md.html": "markdown"
     }
